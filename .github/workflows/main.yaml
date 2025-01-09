@@ -17,4 +17,4 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
         aws-region: us-east-2
     - name: Deploy static website from S3 bucket
-      run: aws s3 mv ./index.html s3://bliss-github-actions
+      run: aws s3 sync . s3://bliss-github-actions --delete

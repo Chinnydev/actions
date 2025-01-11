@@ -1,4 +1,4 @@
-#Deploying a static website
+#Deploying a static websites
 name: Set up a static website using s3 bucket
 on:
   push:
